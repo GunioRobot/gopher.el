@@ -1,4 +1,7 @@
-#+TITLE: =gopher.el=
+#+TITLE:   About =gopher.el=
+#+AUTHOR:  Matthew Snyder and [[./AUTHORS.org][the gopher.el authors]]
+#+DATE:    2011
+#+STARTUP: align
 #+OPTIONS: toc:nil
 
 =gopher.el= is an Emacs mode to browse Gopher.
@@ -21,6 +24,8 @@
   | =[=          | Move to the previous text file link.                                                |
   | =u=          | Navigate to the parent of the current address.                                      |
   | =r=          | Reload the current address.                                                         |
+  | =B=          | Navigate backwards through the history                       |
+  | =F=          | Navigate forward through the history                         |
 
 * Miscellaneous
 
