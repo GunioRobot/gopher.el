@@ -119,10 +119,10 @@
       (setq content-type 'directory-listing))
   (unless no-history (gopher-history-new url selector))
   (setq gopher-network-args (append (list
-                                     :name "gopher" 
-                                     :buffer gopher-buffer-name 
-                                     :host url 
-                                     :service 70 
+                                     :name "gopher"
+                                     :buffer gopher-buffer-name
+                                     :host url
+                                     :service 70
                                      :filter (gopher-get-matching "filter" content-type)
                                      :sentinel (gopher-get-matching "sentinel" content-type))
                                     (gopher-get-extra-network-args content-type)))
@@ -136,7 +136,7 @@
    ((and selector search-argument) (format "%s\t%s\r\n" selector search-argument))
    (selector (format "%s\r\n" selector))
    (t "\r\n")))
-  
+
 (defun gopher-prepare-buffer (url selector)
   (set-window-buffer (selected-window) gopher-buffer-name)
   (with-current-buffer gopher-buffer-name
@@ -192,7 +192,7 @@
     (setq gopher-current-data (concat gopher-current-data string))))
 
 (defun gopher-display-line (line)
-  (if (or 
+  (if (or
        (zerop (length line))
        (string-match "^\.$" line))
       ""
@@ -203,7 +203,7 @@
 (defun gopher-format-line (line-data)
   (let ((content-type (gopher-get-content-type line-data)))
     (if (and content-type (gopher-get-face content-type))
-        (propertize (getf line-data :display-string) 
+        (propertize (getf line-data :display-string)
                     'face (gopher-get-face content-type))
       (getf line-data :display-string))))
 
