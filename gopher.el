@@ -15,10 +15,10 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-;; Author: Matthew Snyder <matthew.c.snydere@gmail.com>
+;; Author: Matthew Snyder <matthew.c.snyder@gmail.com>
 ;;         and the gopher.el authors (see AUTHORS.org)
 ;; URL: http://github.com/ardekantur/gopher.el
-;; Version: 0.0.1
+;; Version: 0.0.2
 
 ;; This file is not part of GNU Emacs.
 
